@@ -7,7 +7,16 @@
             string="Quality Report "
 			header="False"
             auto="False">
-        </report>	
+        </report>
+		
+		<report id="stock_move_quality_customer" 
+            model="stock.move" 
+            name="stock.move.quality2"
+            rml="stock_quality_report/report/stock_quality_report_customer.rml"
+            string="Quality Report (customer) "
+			header="False"
+            auto="False">
+        </report>
 	</data>
 </openerp>
 		
