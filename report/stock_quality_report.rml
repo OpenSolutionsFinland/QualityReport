@@ -61,39 +61,42 @@
   </stylesheet>
   <story>
 	<!-- <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para> -->
-	<blockTable colWidths="75,75,75,75" style="Table7">
-      <tr>
-        <td>
-          <para style="terp_tblheader_General_Centre">Tuote</para>
-        </td>
-        <td>
-          <para style="terp_tblheader_General_Centre">Huomautuksia</para>
-        </td>
-        <td>
-          <para style="terp_tblheader_General_Centre">Tarkastaja</para>
-        </td>
-		<td>
-          <para style="terp_tblheader_General_Centre">Päivämäärä</para>
-        </td>
-      </tr>
-    </blockTable>
-
-    <blockTable colWidths="75, 75, 75, 75" style="Table7">
-	  <para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
-      <tr>
-        <td>
-        	<para style="terp_default_8">[[ o.product_id.name ]]</para>
-        </td>
-        <td>
-        	<para style="terp_default_8">[[ o.inspection_notes ]]</para>
-        </td>
-		<td>
-			<para style="terp_default_8">[[ o.inspected_by ]]</para>
-		</td>
-		<td>
-			<para style="terp_default_8">PVM</para>
-		</td>
-      </tr>
+    <blockTable colWidths="75, 75, 75, 75, 75" style="Table7">
+	  	<tr>
+	        <td>
+	        	<para style="terp_tblheader_General_Centre">Tuote</para>
+	        </td>
+	        <td>
+	        	<para style="terp_tblheader_General_Centre">Huomautuksia</para>
+	        </td>
+	        <td>
+	        	<para style="terp_tblheader_General_Centre">Tarkastaja</para>
+	        </td>
+			<td>
+	        	<para style="terp_tblheader_General_Centre">Sarjanumero</para>
+	        </td>
+			<td>
+	        	<para style="terp_tblheader_General_Centre">Päivämäärä</para>
+	        </td>
+	      </tr>
+		<tr>
+			<para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
+        	<td>
+        		<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.product_id.name ]]</para>
+        	</td>
+        	<td>
+        		<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.inspection_notes ]]</para>
+        	</td>
+			<td>
+				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.inspected_by ]]</para>
+			</td>
+			<td>
+				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.prodlot_id.name ]]</para>
+			</td>
+			<td>
+				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.prodlot_id.name ]]</para>
+			</td>
+      	</tr>
     </blockTable>
 
   </story>
