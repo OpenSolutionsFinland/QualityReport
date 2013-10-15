@@ -84,24 +84,25 @@
 	        </td>
 	      </tr>
 		<tr>
-			<para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
+			<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]]</para>
         	<td>
-        		<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.product_id.name ]]</para>
+        		<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.product_id.name ]]</para>
         	</td>
         	<td>
-        		<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.inspection_notes ]]</para>
+				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.product_quality_weight ]] </para>
+        		
         	</td>
 			<td>
-				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.product_quality_weight ]] </para>
+				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.inspection_notes ]]</para>
 			</td>
 			<td>
-				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.prodlot_id.name ]]</para>
+				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.inspected_by ]]</para>
 			</td>
 			<td>
-				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.inspected_by ]]</para>
+				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.prodlot_id.name ]]</para>
 			</td>
 			<td>
-				<para style="terp_default_8">[[ repeatIn(objects,'o') ]] [[ o.create_date ]]</para>
+				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.create_date ]]</para>
 			</td>
       	</tr>
     </blockTable>
