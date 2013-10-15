@@ -2,7 +2,7 @@
 	<data>
         <report id="stock_move_quality_id" 
             model="stock.move" 
-            name="stock.move.quality" 
+            name="stock.move.quality.new" 
             rml="stock_move_quality/report/stock_move_quality.rml"
             string="Quality Report "
             auto="False">
