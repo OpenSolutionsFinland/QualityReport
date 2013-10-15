@@ -1,1 +1,1 @@
-import stock_quality_report
+import report

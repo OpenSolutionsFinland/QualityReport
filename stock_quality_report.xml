@@ -1,10 +1,11 @@
 <openerp>
 	<data>
-        <report id="stock_move_quality_id" 
+        <report id="stock_move_quality" 
             model="stock.move" 
             name="stock.move.quality" 
-            rml="stock_move_quality/stock_move_quality.rml"
+            rml="stock_quality_report/report/stock_quality_report.rml"
             string="Quality Report "
+			header="False"
             auto="False">
         </report>	
 	</data>
