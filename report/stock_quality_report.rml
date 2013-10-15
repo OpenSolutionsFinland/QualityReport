@@ -61,7 +61,7 @@
   </stylesheet>
   <story>
 	<!-- <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para> -->
-	<para style="">Laaturaportti</para>
+	<para style="terp_header">Laaturaportti</para>
     <blockTable colWidths="75, 75, 75, 75, 75, 75" style="Table7">
 	  	<tr>
 	        <td>
@@ -82,15 +82,14 @@
 			<td>
 	        	<para style="terp_tblheader_General_Centre">Päivämäärä</para>
 	        </td>
-	      </tr>
+	    </tr>
 		<tr>
-			<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]]</para>
+			<!-- <para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]]</para>-->
         	<td>
         		<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.product_id.name ]]</para>
         	</td>
         	<td>
 				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.product_quality_weight ]] </para>
-        		
         	</td>
 			<td>
 				<para style="terp_default_Centre_9">[[ repeatIn(objects,'o') ]] [[ o.inspection_notes ]]</para>
