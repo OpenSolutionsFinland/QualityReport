@@ -13,7 +13,7 @@ class stock_quality_report(report_sxw.rml_parse):
 report_sxw.report_sxw(
     'report.stock.move.quality',
     'stock.move',
-    'addons/stock_quality_report/report/stock_move_quality.rml',
+    'addons/stock_quality_report/stock_move_quality.rml',
     parser=stock_quality_report
 )
 
