@@ -60,9 +60,8 @@
     <images/>
   </stylesheet>
   <story>
- 	<para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
 	<!-- <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para> -->
-	<blockTable colWidths="75, 75,75,75" style="Table7">
+	<blockTable colWidths="75,75,75,75" style="Table7">
       <tr>
         <td>
           <para style="terp_tblheader_General_Centre">Tuote</para>
@@ -80,6 +79,7 @@
     </blockTable>
 
     <blockTable colWidths="75, 75, 75, 75" style="Table7">
+	  <para style="terp_default_8">[[ repeatIn(objects,'o') ]]</para>
       <tr>
         <td>
         	<para style="terp_default_8">[[ o.product_id.name ]]</para>
